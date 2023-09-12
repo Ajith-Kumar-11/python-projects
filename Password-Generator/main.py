@@ -3,6 +3,7 @@ import random
 
 characters = list(string.ascii_letters + string.digits + "!@#$%^&*")
 
+
 def password_generator():
     pass_len = int(input("Enter the length of the password: "))
 
@@ -12,9 +13,10 @@ def password_generator():
         password.append(random.choice(characters))
 
     random.shuffle = password
-    password="".join(password)
+    password = "".join(password)
 
     print(password)
+
 
 option = input("Do you want to generate a password (Yes/No)?  ")
 if option == "Yes":
