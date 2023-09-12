@@ -18,10 +18,11 @@ def password_generator():
     print(password)
 
 
-option = input("Do you want to generate a password (Yes/No)?  ")
-if option == "Yes":
+option = input("Do you want to generate a password (Yes/No)?")
+option = option.lower()
+if option == "yes":
     password_generator()
-elif option == "No":
+elif option == "no":
     print("Program terminated")
     quit()
 else:
